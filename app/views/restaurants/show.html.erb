@@ -1,0 +1,11 @@
+<h1><%= @restaurant.name.capitalize %></h1>
+<h3>Address:</h3>
+<p><%= @restaurant.address.capitalize %></p>
+<h3>Phone number:</h3>
+<p><%= @restaurant.phone_number %></p>
+<h3>Category:</h3>
+<p><%= @restaurant.category.capitalize %></p>
+
+<%= link_to "Add a review", new_restaurant_review_path(@restaurant)  %>
+
+
